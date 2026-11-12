@@ -24,6 +24,6 @@ int gemm_sparse_openmp(const float *a, const sparse_weights *w, float *c, size_t
             for (size_t col = 0; col < 4; ++col) c[i * w->n + 4 * g + col] = acc[col];
         }
     }
-    fputs("TODO: implement gemm_sparse_openmp.\n", stderr);
+    // fputs("TODO: implement gemm_sparse_openmp.\n", stderr);
     return SPARSE_OK;
 }

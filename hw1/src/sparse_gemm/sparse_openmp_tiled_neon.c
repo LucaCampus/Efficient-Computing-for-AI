@@ -14,7 +14,7 @@ int gemm_sparse_openmp_tiled_neon(const float *a, const sparse_weights *w,
        with a plain '#pragma omp parallel for'. The row tile is fixed at four;
        the benchmark tests thread counts 1/2/4. Use the same packed block
        traversal and ordering as the other kernels. */
-    fputs("TODO: implement tiled NEON sparse GEMM with OpenMP\n", stderr);
+    // fputs("TODO: implement tiled NEON sparse GEMM with OpenMP\n", stderr);
 #ifdef _OPENMP
 #pragma omp parallel for
 #endif

@@ -8,7 +8,7 @@ int gemm_sparse_tiled(const float *a, const sparse_weights *w, float *c,
     /* TODO: use a row tile of exactly four input rows. Keep four 4-column
        output accumulators in local storage. For every retained block, load
        its weight values once and reuse them for all four rows. */
-    fputs("TODO: implement gemm_sparse_tiled and reuse weights across rows\n", stderr);
+    // fputs("TODO: implement gemm_sparse_tiled and reuse weights across rows\n", stderr);
     if (!a || !w || !c) return SPARSE_ERROR;
     if (m % 4 != 0) return SPARSE_ERROR;
 
