@@ -33,5 +33,5 @@ int gemm_sparse_tiled(const float *a, const sparse_weights *w, float *c,
             c[(i0 + t) * w->n + 4 * g + col] = acc[t][col];
       }
     }
-    return SPARSE_OK;;
+    return SPARSE_OK;
 }
