@@ -1,16 +1,10 @@
 """Basic connection example.
 """
 
-import redis
 import time
+from redis_config import create_redis_client
 
-redis_client = redis.Redis(
-    host='megasweet-vegetable-cover-83233.db.redis.io',
-    port=14483,
-    decode_responses=True,
-    username="default",
-    password="0l55BJiIdeLbzgzz2akDmatGIwIPCf5q",
-)
+redis_client = create_redis_client()
 
 
 is_connected = redis_client.ping()
